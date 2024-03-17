@@ -15,15 +15,15 @@ app.use(cors());
 
 //user api
 app.use("", userRouter);
-
+app.get('/', (req, res) => {
+  res.send('Home Page');
+});
 app.all("*", (req, res) => {
   
    res.status(404).send("404 NOT FOUND");
    
 });
-app.get('/', (req, res) => {
-  res.send('Home Page');
-});
+
 
 // enabling socket server // -------
 const socketServer = require("http").Server(app);
