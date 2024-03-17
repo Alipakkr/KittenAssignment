@@ -216,7 +216,6 @@ img{
 .wrapper.animated-signup .form-container.sign-up {
     animation: signup-flip 1s ease-in-out forwards;
 }
-
 @keyframes signup-flip {
     0% {
         transform: translateX(0);
@@ -224,6 +223,7 @@ img{
     }
 
     50% {
+      
         transform: translateX(50rem) scale(1.1);
     }
 
