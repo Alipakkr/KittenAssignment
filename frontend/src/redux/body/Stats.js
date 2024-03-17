@@ -32,7 +32,7 @@ export function fetchUsers() {
     dispatch(setLoading(true)); // Dispatching setLoading action with true
 
     // Making a request to fetch users from the server
-    let response = await request("GET", "/fetchUsers");
+    let response = await request("GET", "/users/fetchUsers");
 
     // If request is successful, dispatch getUsers action with fetched data
     if (response.success) {

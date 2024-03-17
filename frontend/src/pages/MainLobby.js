@@ -23,7 +23,7 @@ const MainLobby = (props) => {
     }
 
     button.value = "STARTING...";
-    const response = await request("POST", "/createUser", { username });
+    const response = await request("POST", "/users/createUser", { username });
 
     if (response.success) {
       setItem("user", response.data);

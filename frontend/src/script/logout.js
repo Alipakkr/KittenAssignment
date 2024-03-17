@@ -1,7 +1,7 @@
 function logout() {
     const accessToken = localStorage.getItem("token");
   
-    fetch(`https://type-racing-speedster.onrender.com/users/logout`, {
+    fetch(`https://kittenassignment.onrender.com/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -25,25 +25,7 @@ function logout() {
       });
   }
   
-  document.getElementById("Learnig").addEventListener("click", function (e) {
-    e.preventDefault();
-    window.location.href = "../view/learningTool.html";
-  });
-  
-  document.getElementById("team").addEventListener("click", function (e) {
-    e.preventDefault();
-    window.location.href = "../view/news.html";
-  });
-  
-  document.getElementById("Home").addEventListener("click", function (e) {
-    e.preventDefault();
-    window.location.href = "../public/dashboard.html";
-  });
-  
-  document.getElementById("achievements").addEventListener("click", function (e) {
-    e.preventDefault();
-    window.location.href = "../view/achivement.html";
-  });
+ 
   function toggleMenu() {
     var innerNavbar = document.querySelector(".inner-navbar");
     innerNavbar.classList.toggle("show");

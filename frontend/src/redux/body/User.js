@@ -64,7 +64,7 @@ export function updateUserPoints(userData) {
       username: userData.username,
       matchesWon: userData.matchesWon,
     }); // Prepare request body
-    let response = await request("PUT", "/updateUser", reqbody); // Make request to update user points
+    let response = await request("PUT", "/users/updateUser", reqbody); // Make request to update user points
 
     if (response.success) {
       socket = io(ENDPOINT); // Connect to Socket.IO server
