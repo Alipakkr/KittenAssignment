@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //user api
-app.use("/", userRouter);
+app.use("/users", userRouter);
 app.get('/', (req, res) => {
   res.send('Home Page');
 });
