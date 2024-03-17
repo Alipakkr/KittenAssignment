@@ -1,0 +1,38 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+
+
+
+
+/* Scrollbar styling */
+
+/* Works on Firefox */
+.styleScroll{
+	scrollbar-width: thin;
+	scrollbar-color: rgb(218, 121, 121) auto;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.styleScroll::-webkit-scrollbar {
+	width: 7px;
+}
+
+.styleScroll::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.styleScroll::-webkit-scrollbar-thumb {
+	background-color:rgb(218, 121, 121);
+    border-radius: 10px;
+}
+
+/* End scrollbar styling*/
