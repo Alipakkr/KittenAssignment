@@ -129,23 +129,23 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// router.post("/createUser", async (req, res) => {
-//   try {
-//     console.log(req.body);
-//     let user = await UserModel.findOne({ username: req.body.username });
-//     if (user) {
-//       return successResponse(res, "user is already exists", user);
-//     }
+router.post("/createUser", async (req, res) => {
+  try {
+    console.log(req.body);
+    let user = await UserModel.findOne({ username: req.body.username });
+    if (user) {
+      return successResponse(res, "user is already exists", user);
+    }
 
-//     let newUser = await UserModel.create({
-//       username: req.body.username,
-//     });
+    let newUser = await UserModel.create({
+      username: req.body.username,
+    });
 
-//     return successResponse(res, "username is created", newUser);
-//   } catch (error) {
-//     return failureResponse(res, error.message, error);
-//   }
-// });
+    return successResponse(res, "username is created", newUser);
+  } catch (error) {
+    return failureResponse(res, error.message, error);
+  }
+});
 
 //to get exist user details //
 
