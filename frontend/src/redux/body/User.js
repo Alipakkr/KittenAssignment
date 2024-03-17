@@ -4,7 +4,7 @@ import { getItem } from "../../utils/storage"; // Importing utility function to 
 import { request } from "../../api/request"; // Importing API request function
 import { fetchUsers } from "./Stats"; // Importing action creator to fetch users from the server
 
-const ENDPOINT = "localhost:4000";
+const ENDPOINT = "https://kittenassignment.onrender.com/";
 var socket;
 
 // Creating a user slice using createSlice from Redux Toolkit

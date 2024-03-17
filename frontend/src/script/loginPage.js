@@ -12,7 +12,7 @@ signInLink.addEventListener("click", () => {
   wrapper.classList.remove("animated-signin");
 });
 
-const baseURL = "https://type-racing-speedster.onrender.com/";
+const baseURL = "https://kittenassignment.onrender.com/";
 
 const invalidspan = document.getElementById("invalid-text");
 const invalid1span = document.getElementById("invalid1-text");
@@ -30,19 +30,19 @@ sendOtpButton.addEventListener("click", async function () {
       },
       body: JSON.stringify({ email }),
     });
-
-    const data = await response.json();
-
-    if (response.ok) {
-      invalid1span.innerHTML = `${data.msg}`; // Show success message
-      invalid1span.style.color = "green";
-    } else {
-      invalid1span.innerHTML = `${data.msg}`; // Show error message
-      invalid1span.style.color = "red";
-    }
+// console.log("hello world")
+   // const data = await response.json();
+   
+    // if (response.ok) {
+    //   invalid1span.innerHTML = `${data.msg}`; // Show success message
+    //   invalid1span.style.color = "green";
+    // } else {
+    //   invalid1span.innerHTML = `${data.msg}`; // Show error message
+    //   invalid1span.style.color = "red";
+    // }
   } catch (error) {
     console.error("Error:", error);
-
+    console.log(error)
     invalid1span.innerHTML = "Something went wrong !";
   }
 });
@@ -123,7 +123,7 @@ async function loginUser() {
         localStorage.setItem("token", data.access_token);
         localStorage.setItem("name", data.name);
 
-        location.href = "../public/dashboard.html";
+        location.href = "http://localhost:3001/";
       } else {
         invalidspan.innerHTML = `${data.msg}`;
         invalidspan.style.color = "red";
@@ -144,10 +144,10 @@ async function loginUser() {
 
 const login_facebook = document.getElementById("facebook-login");
 login_facebook.addEventListener("click", () => {
-    window.location.href = `${baseURL}facebook`;
+  window.location.href = `${baseURL}facebook`;
 });
 
 const google_login = document.getElementById("google-login");
 google_login.addEventListener("click", () => {
-    window.location.href = `${baseURL}google`;
+  window.location.href = `${baseURL}google`;
 });
