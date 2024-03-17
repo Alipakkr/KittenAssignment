@@ -8,7 +8,7 @@ import axios from "axios";
 import { GET, POST, PUT } from "./ConstantsReq";
 
 // Defining the base URL for the API endpoint.
-let hostUrl = 'https://exploding-kitten-backend-xur6.onrender.com';
+let hostUrl = 'http://localhost:4000';
 
 // Exporting a function named request for making HTTP requests.
 export const request = (method, endPoint, reqBody = null) => {

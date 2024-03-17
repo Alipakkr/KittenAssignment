@@ -150,7 +150,7 @@ const GamePlayArea = (props) => {
         setTimeout(() => {
           sendDataToUpdate(generateRandomDeck(), [], "", "Win");
         }, 700);
-        showMessageAndReset("You won", "Play Again");
+        showMessageAndReset("Winner 🏅", "Play Again");
       } else {
         sendDataToUpdate(cardsCopy, defuseCards, poppedCard, "none");
       }
@@ -221,7 +221,7 @@ const GamePlayArea = (props) => {
       <div
         id="preloader"
         className="w-full left-0 flex flex-col justify-center -space-y-6 items-center h-[100vh] absolute bg-[rgb(84,3,25)] top-0 z-20"
-      ><img alt="" src={Logo}  style={{ height: "30px", width: "30px" }}  ></img>
+      ><img alt="" src={Logo} style={{ height: "30px", width: "30px" }}  ></img>
       </div>
       {popupVisible && (
         <Popover
@@ -239,7 +239,7 @@ const GamePlayArea = (props) => {
       <section className="flex justify-center space-x-80 z-10 relative h-[80vh]  text-black">
         <div className="z-20 absolute max-h-44  bottom-2  w-96 ">
           <div className="text-center font-semibold">
-          Click on the deck to reveal a card.
+            Click on the deck to reveal a card.
           </div>
           {deck.map((card, index) => {
             let right = index * 4;
@@ -262,7 +262,7 @@ const GamePlayArea = (props) => {
         </div>
 
         <section className=" flex flex-col items-center ">
-        {/* <h3 className="font-semibold text-black px-7 py-3  font-bold bg-[rgb(250,159,67)] rounded-md">BOMB CARDS</h3> */}
+          {/* <h3 className="font-semibold text-black px-7 py-3  font-bold bg-[rgb(250,159,67)] rounded-md">BOMB CARDS</h3> */}
           <h3 className="font-semibold text-black px-7 py-3  font-bold bg-[rgb(250,159,67)] rounded-md">
             {openedCard ? openedCard + " CARD" : "OPENED CARDS "}
           </h3>

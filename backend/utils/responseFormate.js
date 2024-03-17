@@ -4,6 +4,7 @@ const successResponse = (res, message, data) => {
   return res.status(200).send({ success: true, message, data });
 };
 
+
 // Function to format a failure response.
 const failureResponse = (res, message, error) => {
   // Determining the status code based on the error status, defaulting to 400 if not provided.

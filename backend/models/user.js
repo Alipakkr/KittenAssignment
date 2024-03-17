@@ -12,7 +12,14 @@ const UserSchema = new Schema({
   // Defining a field named 'username' with the 'reqString' options.
   // This field is required, must be of type String, and must be unique.
   username: reqString,
-
+  email: {
+    type: String,
+    lowercase: true,
+    trim: true,
+  },
+  password:{
+    type: String
+  },
   // Defining a field named 'matchesWon' with the 'reqNumber' options.
   // This field is optional and defaults to 0 if not provided.
   matchesWon: reqNumber,

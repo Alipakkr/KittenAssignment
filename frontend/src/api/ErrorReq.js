@@ -9,7 +9,7 @@ const {
 } = require("./ConstantsReq");
 
 // Exporting a function named ErrorReq, which takes an error object as input.
-export const  ErrorReq= (error) => {
+export const ErrorReq = (error) => {
   // Switching based on the HTTP status code of the error response.
   switch (error.response ? error.response.status : null) {
     // Handling different HTTP error status codes.

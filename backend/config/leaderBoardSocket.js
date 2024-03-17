@@ -14,6 +14,7 @@ module.exports.leaderboardSocket = (server) => {
     // When this event is received from any client, the server broadcasts a "sendUsers" event to all connected clients.
     socket.on("updateLeaderBoard", () => {
       io.sockets.emit("sendUsers");
+      
     });
 
     // Event listener for the "disconnect" event.
