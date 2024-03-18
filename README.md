@@ -43,10 +43,7 @@ my-app/
 
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
-
-## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+https://drive.google.com/file/d/1sQAWxjL3LDHAFn-j1rdwz2o8eObAwte4/view?usp=sharing
 
 ## Features
 - Gameplay: Implement the core gameplay mechanics of Exploding Kittens, including drawing cards from the deck, defusing exploding kittens, shuffling the deck, and handling game over scenarios.
