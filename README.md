@@ -33,8 +33,8 @@ You need to use **Redis** as a database to store the points of all the users and
 Fullstack
 
 ## Deplolyed App
-- Frontend: https://deployed-site.whatever
-- Backend: https://deployed-site.whatever
+- Frontend: 
+- Backend: https://kittenassignment.onrender.com
 - Database: https://deployed-site.whatever
 
 ## Directory Structure
