@@ -49,8 +49,6 @@ Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
 Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 
 ## Features
-- User Authentication: Allow users to register and log in to the application to play the game. This could involve features such as username/password authentication or integration with third-party authentication providers like Google or Facebook.
-
 - Gameplay: Implement the core gameplay mechanics of Exploding Kittens, including drawing cards from the deck, defusing exploding kittens, shuffling the deck, and handling game over scenarios.
 
 - User Profile: Provide users with a profile page where they can view their game statistics, such as the number of matches won and their current deck configuration.
