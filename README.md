@@ -35,7 +35,6 @@ Fullstack
 ## Deplolyed App
 - Frontend: https://kittenalipa.vercel.app/
 - Backend: https://kittenassignment.onrender.com
-- Database: https://deployed-site.whatever
 
 ## Directory Structure
 my-app/
